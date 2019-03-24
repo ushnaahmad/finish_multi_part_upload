@@ -52,7 +52,7 @@ class Constants:
 
 class UploadMultiParts:
     def __init__(self, upload_obj, full_file_path, bucket, prefix):
-        self.chunk_size = 0
+        self.chunk_size = 8388608 # as default
         self.upload_obj = upload_obj
         self.full_file_path = full_file_path
         self.upload_id = self.upload_obj['UploadId']
