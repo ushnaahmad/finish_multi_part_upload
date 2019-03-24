@@ -1,7 +1,6 @@
 import boto3
 import hashlib
 import os
-from NDATools.Utils import *
 
 
 class CheckIncompleteUpload:
